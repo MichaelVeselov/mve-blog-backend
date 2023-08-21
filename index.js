@@ -39,7 +39,7 @@ async function start() {
     );
     console.log('Connected to MongoDB/MVE-Blog...');
 
-    app.listen(PORT, () => {
+    app.listen(PORT || 4000, () => {
       console.log(`Server started on port: ${PORT}...`);
     });
   } catch (error) {
